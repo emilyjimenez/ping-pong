@@ -6,7 +6,6 @@ var pong = function(userNumber) {
   return false;
 }
 }
-
 var ping = function(userNumber) {
   if (userNumber % 3 === 0) {
   return true;
@@ -14,8 +13,6 @@ var ping = function(userNumber) {
   return false;
 }
 }
-
-
 // UI logic goes here
 $(document).ready(function() {
   $("form#pingForm").submit(function(event) {
@@ -36,11 +33,7 @@ $(document).ready(function() {
       } else if ((three === false) && (five === true)) {
         $("#result").append("pong");
       }
-      // else if (userNumber === 0) {
-      //   alert("please use a number greater than zero")
-      // }
 
       $("#result").show();
-
   });
 });
