@@ -1,4 +1,5 @@
 // Business logic goes here
+var numberRange = []
 var pong = function(userNumber) {
   if (userNumber % 5 === 0) {
     return true;
@@ -13,6 +14,7 @@ var ping = function(userNumber) {
     return false;
   }
 }
+
 // UI logic goes here
 $(document).ready(function() {
   $("form#pingForm").submit(function(event) {
