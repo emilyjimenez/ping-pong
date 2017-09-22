@@ -24,13 +24,13 @@ $(document).ready(function() {
       if (userNumber === 0) {
         alert("please use a number greater than zero")
       } else if (three === false && five === false) {
-        $("#result").append(userNumber);
+        $("#result").append("<li>" + userNumber + "</li>");
       } else if ((three === true) && (five === true)) {
-          $("#result").append("ping-pong");
+          $("#result").append("<li>" + "ping-pong" + "</li>");
       } else if ((three === true) && (five === false)) {
-        $("#result").append("ping");
+        $("#result").append("<li>" + "ping" + "</li>");
       } else if ((three === false) && (five === true)) {
-        $("#result").append("pong");
+        $("#result").append("<li>" + "pong" + "</li>");
       }
 
       $("#result").show();
