@@ -3,15 +3,15 @@ var pong = function(userNumber) {
   if (userNumber % 5 === 0) {
     return true;
   } else {
-  return false;
-}
+    return false;
+  }
 }
 var ping = function(userNumber) {
   if (userNumber % 3 === 0) {
-  return true;
-} else {
-  return false;
-}
+    return true;
+  } else {
+    return false;
+  }
 }
 // UI logic goes here
 $(document).ready(function() {
@@ -23,8 +23,7 @@ $(document).ready(function() {
 
       if (userNumber === 0) {
         alert("please use a number greater than zero")
-      }
-      else if (three === false && five === false) {
+      } else if (three === false && five === false) {
         $("#result").append(userNumber);
       } else if ((three === true) && (five === true)) {
           $("#result").append("ping-pong");
