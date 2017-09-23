@@ -1,39 +1,52 @@
 // Business logic goes here
-var numberRange = []
-var pong = function(userNumber) {
-  if (userNumber % 5 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+function isPingPong(userNumber) {
+  var numbers = [];
+  for (var i = 1; i <= userNumber; i++) {
+    if ((i % 5 === 0) && (i % 3 === 0)) {
+      numbers.replace(i,"pig-pong");
+    } else if (i % 3 === 0) {
+      numbers.replace(i,"ping");
+    } else if (i % 5 === 0) {
+      numbers.push(i,"pong");
+    } else {
+      numbers.push(i);
+      console.log(i);
+    }
+
+} return numbers
 }
-var ping = function(userNumber) {
-  if (userNumber % 3 === 0) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function isPong(userNumber) {
+//
+// });
+// function isPing(userNumber) {
+
+
+
+
 
 // UI logic goes here
 $(document).ready(function() {
   $("form#pingForm").submit(function(event) {
       event.preventDefault();
       var userNumber = parseInt($("input#number").val());
-      var three = ping(userNumber);
-      var five = pong(userNumber);
+      var outcome = isPingPong(userNumber);
 
-      if (userNumber === 0) {
-        alert("please use a number greater than zero")
-      } else if (three === false && five === false) {
-        $("#result").append("<li>" + userNumber + "</li>");
-      } else if ((three === true) && (five === true)) {
-          $("#result").append("<li>" + "ping-pong" + "</li>");
-      } else if ((three === true) && (five === false)) {
-        $("#result").append("<li>" + "ping" + "</li>");
-      } else if ((three === false) && (five === true)) {
-        $("#result").append("<li>" + "pong" + "</li>");
-      }
+
+    //   if (userNumber === 0) {
+    //     alert("please use a number greater than zero")
+    //   }
+    //
+    //   numbers.forEach(function(number) {
+    //   if (three === false && five === false) {
+    //     $("#result").append("<li>" + userNumber + "</li>");
+    //   } else if ((three === true) && (five === true)) {
+    //     $("#result").append("<li>" + "ping-pong" + "</li>");
+    //   } else if ((three === true) && (five === false)) {
+    //     $("#result").append("<li>" + "ping" + "</li>");
+    //   } else if ((three === false) && (five === true)) {
+    //     $("#result").append("<li>" + "pong" + "</li>");
+    //   }
+    // });
 
       $("#result").show();
   });
