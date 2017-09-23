@@ -3,7 +3,7 @@ function isPingPong(userNumber) {
   var numbers = [];
   for (var i = 1; i <= userNumber; i++) {
     if ((i % 5 === 0) && (i % 3 === 0)) {
-      numbers.replace(i,"pig-pong");
+      numbers.push("pig-pong");
     } else if (i % 3 === 0) {
       numbers.replace(i,"ping");
     } else if (i % 5 === 0) {
@@ -13,8 +13,8 @@ function isPingPong(userNumber) {
       console.log(i);
     }
 
-} return numbers
 }
+} return numbers
 // function isPong(userNumber) {
 //
 // });
