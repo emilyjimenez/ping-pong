@@ -1,24 +1,21 @@
 // Business logic goes here
 function isPingPong(userNumber) {
-  var numbers = [];
+  var initialNumbers = [];
+  var output;
   for (var i = 1; i <= userNumber; i++) {
-    if ((i % 5 === 0) && (i % 3 === 0)) {
-      numbers.push("pig-pong");
-    } else if (i % 3 === 0) {
-      numbers.replace(i,"ping");
-    } else if (i % 5 === 0) {
-      numbers.push(i,"pong");
-    } else {
-      numbers.push(i);
-      console.log(i);
-    }
+    initialNumbers.push(i)
+  };
+}
+initialNumbers.forEach(function(initialNumber) {
+  if 
+}
+
+
+
 
 }
 } return numbers
-// function isPong(userNumber) {
-//
-// });
-// function isPing(userNumber) {
+
 
 
 
