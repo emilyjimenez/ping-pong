@@ -18,14 +18,12 @@ Go to [https://github.com/emilyjimenez/ping-pong](https://github.com/emilyjimene
 
 ### Specs
 
-|behavior|input|output|
-|----|----|----|----|
-|will take user input and convert to array starting at 1| user number|1,2,3..etc|
-|will replace number in array with "ping-pong" if divisible by 3 & 5|..14,15,16...|..14, ping-pong, 16..|
-|will replace number in array with "pong" if divisible by 5|..4,5,6..|..4, pong, ping..|
-|will replace number in array with "ping" if divisible by 3|..3,4,5,6..|..ping, 4, pong, ping..|
-
-
+| Behavior       | Input        | Output |
+| ------------- |:-------------:| -----:|
+| will take user input and convert to array starting at 1| 4| 1,2,3,4 |
+| will replace number in array with ping-pong if divisible by 3 & 5|..14,15,16...|..14, ping-pong, 15|
+|will replace number in array with pong if divisible by 5|..4,5,6..|..4, pong, ping,..|
+|will replace number in array with ping if divisible by 3|..3,4,5,6|..ping, 4, pong, ping..|
 
 ### Technology Used
 
